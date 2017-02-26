@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS实现人机大战五子棋</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+	div{
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+	}
+	canvas{
+		display: block;
+		margin: 50px auto;
+		box-shadow: -2px -2px 2px #EFEFEF,5px 5px 5px #ccc;
+	}
+	button{
+		width: 100px;
+		height: 40px;
+		font-size: 16px;
+		color: blue;
+		position: absolute;
+		left: 200px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<canvas id="chess" width="450px" height="450px"></canvas>
+		<button type="button" onclick="window.location.reload()">重新开始</button>
+	</div>
+	<script type="text/javascript" src="flex.js"></script>
+</body>
+</html>
+<!-- 
+AI算法：
+	赢法数组：记录所有的赢法，三维数组。
+	赢法的统计数组，一维数组。
+	如何判断胜负
+	计算机落子规则
+ -->
